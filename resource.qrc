@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>theme_light.qss</file>
+        <file>theme_dark.qss</file>
+        <file>world_map.png</file>
+        <file>heatmap.png</file>
+        <file>Asia.png</file>
+        <file>Europe.png</file>
+        <file>NorthAmerica.png</file>
+        <file>TheMiddleEast.png</file>
+    </qresource>
+</RCC>

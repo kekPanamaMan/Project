@@ -1,0 +1,96 @@
+<RCC/>
+/* --- Основной фон и шрифт --- */
+QWidget {
+    font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #222;
+    background: #f4f6fb;
+}
+
+/* --- Заголовок (header) --- */
+#HeaderWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #4f8cff, stop:1 #00e0c6);
+    border-radius: 0 0 24px 24px;
+}
+
+/* --- Поиск --- */
+QLineEdit {
+    border-radius: 8px;
+    border: 1.5px solid #e0e6ef;
+    background: rgba(255,255,255,0.85);
+    padding: 8px 12px;
+    font-size: 15px;
+    color: #22304a;
+}
+QLineEdit:focus {
+    border: 1.5px solid #4f8cff;
+    background: #fff;
+}
+
+/* --- Комбо-боксы --- */
+QComboBox {
+    border-radius: 8px;
+    border: 1.5px solid #e0e6ef;
+    background: rgba(255,255,255,0.85);
+    padding: 8px 12px;
+    font-size: 15px;
+}
+QComboBox:focus {
+    border: 1.5px solid #4f8cff;
+    background: #fff;
+}
+
+/* --- Кнопки тулбара --- */
+QToolBar {
+    background: rgba(255,255,255,0.93);
+    border-top: 1.5px solid #e0e6ef;
+    border-radius: 16px 16px 0 0;
+    min-height: 64px;
+}
+QToolButton {
+    color: #4f8cff;
+    font-size: 15px;
+    border-radius: 12px;
+    padding: 8px 16px;
+    background: transparent;
+}
+QToolButton:checked, QToolButton:hover {
+    background: #eaf2ff;
+    color: #1976d2;
+}
+
+/* --- Виджеты с эффектом стекла --- */
+QLabel[glass="1"] {
+    background: rgba(255,255,255,0.55);
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(80,120,255,0.07);
+    padding: 18px;
+    font-size: 17px;
+}
+
+/* --- Tooltip --- */
+QToolTip {
+    background: #222;
+    color: #fff;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+/* --- Прогресс-бар (если нужен) --- */
+QProgressBar {
+    border-radius: 8px;
+    background: #e0e6ef;
+    height: 16px;
+}
+QProgressBar::chunk {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #4f8cff, stop:1 #00e0c6);
+    border-radius: 8px;
+}
+
+/* --- Кнопка профиля --- */
+QToolButton#ProfileButton {
+    background: #fff;
+    border-radius: 18px;
+    border: none;
+    padding: 0;
+}
